@@ -28,6 +28,7 @@ html,
 body {
   height: 100%;
   background-color: #ffffff;
+  font-family: 'Assistant', sans-serif;
 }
 
 body {
@@ -36,10 +37,26 @@ body {
   color: #222222;
 }
 
-.cover-container {
-  max-width: 42em;
+h1{
+  font-weight: 800;
+  font-size: 3em;
 }
 
+.cover-container {
+  max-width: 80em;
+}
+
+#circle_bg{
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: rgba(242, 169, 0, 0.28);
+  margin: 10em auto;
+}
+#circle_bg p{
+  padding-top: 200px;
+  margin-right: -150px; 
+}
 
 /*
  * Header
@@ -74,15 +91,6 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
@@ -95,9 +103,9 @@ body {
   font-weight: 700;
 }
 #cover_background{
-    background-image: url(image/tiger-beer.jpg);
+    background: url(image/tiger-beer.jpg);
     background-repeat: no-repeat;
-    min-height: 800px;
+    min-height: 50em;
     background-position: center;
 }
 /*
@@ -106,3 +114,34 @@ body {
 .mastfoot {
   color: #222222;
 }
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+    #circle_bg{
+      height: 300px;
+      width: 300px;
+      margin: 5em auto;
+    }
+
+    #cover_background{
+        background-image: url(image/tiger-beer-small.jpg);
+        background-position: inherit;
+        min-height: auto;
+    }
+    #circle_bg p{
+      padding-top: 105px;
+      margin-right: -5px;
+      font-size: 12px;
+    }
+    .cover {
+      padding: 0;
+    }
+  }
