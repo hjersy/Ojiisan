@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #222222;
 }
 
 /* Custom default button */
@@ -45,16 +45,20 @@ h1{
 .cover-container {
   max-width: 80em;
 }
+.ojsquare{
+  height: 90px;
+  width: 50px;
+  background-color: #f2912e;
+  margin-top: -1em;
+}
 
 #circle_bg{
   height: 500px;
   width: 500px;
-  border-radius: 50%;
-  background-color: rgba(242, 169, 0, 0.28);
   margin: 10em auto;
 }
-#circle_bg p{
-  padding-top: 200px;
+#circle_bg .infobox{
+  padding-top: 100px;
   margin-right: -150px; 
 }
 
@@ -136,9 +140,9 @@ h1{
         background-position: inherit;
         min-height: auto;
     }
-    #circle_bg p{
-      padding-top: 105px;
-      margin-right: -5px;
+    #circle_bg .infobox{
+      padding-top: 70px;
+      margin-right: -35px;
       font-size: 12px;
     }
     .cover {
